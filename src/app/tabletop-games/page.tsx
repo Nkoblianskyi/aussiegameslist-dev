@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Navigation } from '@/src/components/navigation'
-import { Footer } from '@/src/components/footer'
-import { CookieBanner } from '@/src/components/cookie-banner'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

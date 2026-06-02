@@ -1,13 +1,13 @@
 'use client'
 
-import { Navigation } from '@/src/components/navigation'
-import { Footer } from '@/src/components/footer'
-import { CookieBanner } from '@/src/components/cookie-banner'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 import { useState } from 'react'
-import { Field, FieldGroup, FieldLabel } from '@/src/components/ui/field'
-import { Input } from '@/src/components/ui/input'
-import { Textarea } from '@/src/components/ui/textarea'
-import { Button } from '@/src/components/ui/button'
+import { Field, FieldGroup, FieldLabel } from '@/components/ui/field'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Button } from '@/components/ui/button'
 
 export default function AboutPage() {
   const [formData, setFormData] = useState({

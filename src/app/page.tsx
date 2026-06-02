@@ -1,14 +1,14 @@
 'use client'
 
-import { Navigation } from '@/src/components/navigation'
-import { Footer } from '@/src/components/footer'
-import { CookieBanner } from '@/src/components/cookie-banner'
-import { HeroSection } from '@/src/components/sections/hero-section'
-import { LivingBoardWorlds } from '@/src/components/sections/living-board-worlds'
-import { OriginsTimeline } from '@/src/components/sections/origins-timeline'
-import { GameBreathes } from '@/src/components/sections/game-breathes'
-import { TableCulture } from '@/src/components/sections/table-culture'
-import { AboutPreview } from '@/src/components/sections/about-preview'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
+import { HeroSection } from '@/components/sections/hero-section'
+import { LivingBoardWorlds } from '@/components/sections/living-board-worlds'
+import { OriginsTimeline } from '@/components/sections/origins-timeline'
+import { GameBreathes } from '@/components/sections/game-breathes'
+import { TableCulture } from '@/components/sections/table-culture'
+import { AboutPreview } from '@/components/sections/about-preview'
 
 export default function HomePage() {
   return (

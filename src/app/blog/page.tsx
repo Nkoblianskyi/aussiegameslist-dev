@@ -1,6 +1,6 @@
-import { Navigation } from '@/src/components/navigation'
-import { Footer } from '@/src/components/footer'
-import { CookieBanner } from '@/src/components/cookie-banner'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
+import { CookieBanner } from '@/components/cookie-banner'
 
 const blogPosts = [
   {
