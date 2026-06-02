@@ -134,7 +134,7 @@ export function HowWeRank() {
                 <div className="text-center">
                   <Button
                     asChild
-                    className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-6 py-2 text-sm w-full max-w-xs opacity-100 bg-opacity-100 relative z-10"
+                    className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-6 py-2 text-sm w-full max-w-xs opacity-100 relative z-10"
                   >
                     <span>GET BONUS</span>
                   </Button>
@@ -147,7 +147,7 @@ export function HowWeRank() {
                   {/* Left Column: Rank + Casino Info */}
                   <div className="flex items-center gap-4 w-48">
                     {/* Rank */}
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full font-bold text-lg bg-yellow-400 text-black opacity-100 bg-opacity-100 relative z-10">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full font-bold text-lg bg-yellow-400 text-black opacity-100 relative z-10">
                       1
                     </div>
 
@@ -205,7 +205,7 @@ export function HowWeRank() {
                   <div className="w-24">
                     <Button
                       asChild
-                      className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-3 py-3 text-sm w-full h-auto opacity-100 bg-opacity-100 relative z-10"
+                      className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-3 py-3 text-sm w-full h-auto opacity-100 relative z-10"
                     >
                       <span>GET BONUS</span>
                     </Button>
@@ -219,7 +219,7 @@ export function HowWeRank() {
                   {/* Left Column: Rank + Casino Info */}
                   <div className="flex items-center gap-6 w-72">
                     {/* Rank */}
-                    <div className="flex items-center justify-center w-14 h-14 rounded-full font-bold text-xl bg-yellow-400 text-black opacity-100 bg-opacity-100 relative z-10">
+                    <div className="flex items-center justify-center w-14 h-14 rounded-full font-bold text-xl bg-yellow-400 text-black opacity-100 relative z-10">
                       1
                     </div>
 
@@ -277,7 +277,7 @@ export function HowWeRank() {
                   <div className="w-48">
                     <Button
                       asChild
-                      className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-4 py-4 text-lg w-full h-auto opacity-100 bg-opacity-100 relative z-10"
+                      className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-4 py-4 text-lg w-full h-auto opacity-100 relative z-10"
                     >
                       <span>GET BONUS</span>
                     </Button>

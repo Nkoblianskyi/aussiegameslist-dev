@@ -101,7 +101,7 @@ export function CasinoRankings() {
                       className={`${casino.isTopChoice
                           ? "bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg"
                           : "bg-blue-800 hover:bg-blue-900 text-white"
-                        } font-semibold px-6 py-2 text-sm w-full max-w-xs opacity-100 bg-opacity-100 relative z-10`}
+                        } font-semibold px-6 py-2 text-sm w-full max-w-xs opacity-100 relative z-10`}
                     >
                       <span>GET BONUS</span>
                     </Button>
@@ -116,7 +116,7 @@ export function CasinoRankings() {
                       {/* Rank */}
                       <div
                         className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-lg ${casino.isTopChoice ? "bg-yellow-400 text-black" : "bg-red-800 text-white"
-                          } opacity-100 bg-opacity-100 relative z-10`}
+                          } opacity-100 relative z-10`}
                       >
                         {casino.rank}
                       </div>
@@ -179,7 +179,7 @@ export function CasinoRankings() {
                         className={`${casino.isTopChoice
                             ? "bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg"
                             : "bg-blue-800 hover:bg-blue-900 text-white"
-                          } font-semibold px-3 py-3 text-sm w-full h-auto opacity-100 bg-opacity-100 relative z-10`}
+                          } font-semibold px-3 py-3 text-sm w-full h-auto opacity-100 relative z-10`}
                       >
                         <span>GET BONUS</span>
                       </Button>
@@ -195,7 +195,7 @@ export function CasinoRankings() {
                       {/* Rank */}
                       <div
                         className={`flex items-center justify-center w-14 h-14 rounded-full font-bold text-xl ${casino.isTopChoice ? "bg-yellow-400 text-black" : "bg-red-800 text-white"
-                          } opacity-100 bg-opacity-100 relative z-10`}
+                          } opacity-100 relative z-10`}
                       >
                         {casino.rank}
                       </div>
@@ -258,7 +258,7 @@ export function CasinoRankings() {
                         className={`${casino.isTopChoice
                             ? "bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg"
                             : "bg-blue-800 hover:bg-blue-900 text-white"
-                          } font-semibold px-4 py-4 text-lg w-full h-auto opacity-100 bg-opacity-100 relative z-10`}
+                          } font-semibold px-4 py-4 text-lg w-full h-auto opacity-100 relative z-10`}
                       >
                         <span>GET BONUS</span>
                       </Button>
