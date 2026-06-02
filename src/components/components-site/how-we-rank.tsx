@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Star } from "lucide-react"
 import { Card, CardContent } from "./ui/card"
 import { Badge } from "./ui/badge"
@@ -28,10 +29,6 @@ export function HowWeRank() {
     features: ["MGA License", "Crypto Payments", "Live Casino", "24/7 Support"],
     pros: ["Excellent game variety", "Fast payouts", "Professional support", "Mobile optimized"],
     cons: ["High wagering requirements", "Limited live chat hours"],
-  }
-
-  const handleCardClick = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -71,9 +68,14 @@ export function HowWeRank() {
         </div>
 
         <div className="space-y-3 md:space-y-4">
+          <Link
+            href={topCasino.url}
+            target="_blank"
+            rel="noopener sponsored"
+            className="block"
+          >
           <Card
             className="bg-gray-900 border-gray-800 cursor-pointer transition-all duration-200 relative overflow-hidden ring-2 ring-yellow-400 shadow-lg shadow-red-500/20 bg-gradient-to-r from-gray-900 via-red-950/30 to-gray-900 hover:ring-yellow-300"
-            onClick={() => handleCardClick(topCasino.url)}
           >
             <CardContent className="p-4">
               <Badge className="absolute -top-1 -left-1 bg-yellow-400 text-black font-black text-xs px-3 py-1 z-10 rounded-sm">
@@ -131,13 +133,10 @@ export function HowWeRank() {
                 {/* Button - Center */}
                 <div className="text-center">
                   <Button
+                    asChild
                     className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-6 py-2 text-sm w-full max-w-xs opacity-100 bg-opacity-100 relative z-10"
-                    onClick={(e) => {
-                      e.stopPropagation()
-                      handleCardClick(topCasino.url)
-                    }}
                   >
-                    GET BONUS
+                    <span>GET BONUS</span>
                   </Button>
                 </div>
               </div>
@@ -205,13 +204,10 @@ export function HowWeRank() {
                   {/* Right Column: Button */}
                   <div className="w-24">
                     <Button
+                      asChild
                       className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-3 py-3 text-sm w-full h-auto opacity-100 bg-opacity-100 relative z-10"
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        handleCardClick(topCasino.url)
-                      }}
                     >
-                      GET BONUS
+                      <span>GET BONUS</span>
                     </Button>
                   </div>
                 </div>
@@ -280,19 +276,17 @@ export function HowWeRank() {
                   {/* Right Column: Button */}
                   <div className="w-48">
                     <Button
+                      asChild
                       className="bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg font-semibold px-4 py-4 text-lg w-full h-auto opacity-100 bg-opacity-100 relative z-10"
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        handleCardClick(topCasino.url)
-                      }}
                     >
-                      GET BONUS
+                      <span>GET BONUS</span>
                     </Button>
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
+          </Link>
         </div>
       </div>
     </section>

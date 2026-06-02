@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Star } from "lucide-react"
 import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
@@ -7,22 +8,23 @@ import { Badge } from "@/components/ui/badge"
 import { casinos } from "./data/casinos"
 
 export function CasinoRankings() {
-  const handleCardClick = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer")
-  }
-
   return (
     <section id="rankings" className="py-4 bg-black">
       <div className="container mx-auto px-4">
         <div className="space-y-3 md:space-y-4">
           {casinos.map((casino) => (
-            <Card
+            <Link
               key={casino.rank}
+              href={casino.url}
+              target="_blank"
+              rel="noopener sponsored"
+              className="block"
+            >
+            <Card
               className={`bg-gray-900 border-gray-800 cursor-pointer transition-all duration-200 relative overflow-hidden ${casino.isTopChoice
                   ? "ring-2 ring-yellow-400 shadow-lg shadow-red-500/20 bg-gradient-to-r from-gray-900 via-red-950/30 to-gray-900 hover:ring-yellow-300"
                   : "hover:border-red-900/50 hover:shadow-lg hover:shadow-red-500/10"
                 }`}
-              onClick={() => handleCardClick(casino.url)}
             >
               <CardContent className="p-4">
                 {casino.isTopChoice && (
@@ -95,16 +97,13 @@ export function CasinoRankings() {
                   {/* Button - Center */}
                   <div className="text-center">
                     <Button
+                      asChild
                       className={`${casino.isTopChoice
                           ? "bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg"
                           : "bg-blue-800 hover:bg-blue-900 text-white"
                         } font-semibold px-6 py-2 text-sm w-full max-w-xs opacity-100 bg-opacity-100 relative z-10`}
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        handleCardClick(casino.url)
-                      }}
                     >
-                      GET BONUS
+                      <span>GET BONUS</span>
                     </Button>
                   </div>
                 </div>
@@ -176,16 +175,13 @@ export function CasinoRankings() {
                     {/* Right Column: Button */}
                     <div className="w-24">
                       <Button
+                        asChild
                         className={`${casino.isTopChoice
                             ? "bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg"
                             : "bg-blue-800 hover:bg-blue-900 text-white"
                           } font-semibold px-3 py-3 text-sm w-full h-auto opacity-100 bg-opacity-100 relative z-10`}
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          handleCardClick(casino.url)
-                        }}
                       >
-                        GET BONUS
+                        <span>GET BONUS</span>
                       </Button>
                     </div>
                   </div>
@@ -258,22 +254,20 @@ export function CasinoRankings() {
                     {/* Right Column: Button */}
                     <div className="w-48">
                       <Button
+                        asChild
                         className={`${casino.isTopChoice
                             ? "bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg"
                             : "bg-blue-800 hover:bg-blue-900 text-white"
                           } font-semibold px-4 py-4 text-lg w-full h-auto opacity-100 bg-opacity-100 relative z-10`}
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          handleCardClick(casino.url)
-                        }}
                       >
-                        GET BONUS
+                        <span>GET BONUS</span>
                       </Button>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
 
